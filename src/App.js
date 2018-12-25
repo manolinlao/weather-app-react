@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         Weather App (aplicación del clima)
-        <WeatherLocation></WeatherLocation>
+        <WeatherLocation city="bogota,col"></WeatherLocation>
       </div>
     );
   }
