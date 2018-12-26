@@ -12,11 +12,16 @@ const cities = [
 ];
 
 class App extends Component {
+
+  handleSelectedLocation = city => {
+    console.log("App.js::handleSelectionLocation::city = " + city);
+  }
+
   render() {
     return (
       <div className="App">
         Weather App (aplicación del clima)
-        <LocationList cities={cities}></LocationList>
+        <LocationList cities={cities} onSelectedLocation={this.handleSelectedLocation}></LocationList>
       </div>
     );
   }
